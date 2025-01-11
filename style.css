@@ -1,0 +1,142 @@
+:root {
+    --back: #C30E59;
+    --prim: #E82561;
+    --sec: #F2AE66;
+    --bord: #E8E7AB;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    transition: all 0.2s;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background-color: var(--back);
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--bord);
+    width: 70%;
+    height: 400px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 15px;
+    position: sticky;
+}
+
+header {margin: 5px;}
+
+
+h1 {
+    padding: 10px;
+}
+
+
+#input-box {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+#input-button {
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.1s;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: var(--sec);
+}
+
+ul {
+    background-color: var(--sec);
+    list-style: none;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    height: auto;
+    overflow: scroll;
+    overflow-x: hidden;
+    border-radius: 15px;
+
+}
+
+#bat {
+    margin-left: 10px;
+}
+
+li {
+    border: 1px solid var(--prim);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    width: 300px;
+}
+
+li:hover {
+    background-color: green;
+    border-color: green;
+    color: white;
+
+}
+
+.edit-btn,
+.delete-btn {
+    float: right;
+    background-color: var(green);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    border: none;
+    padding: 5px 5px;
+    background: none;
+    margin-right: 2px;
+}
+.edit-btn:hover{
+    padding: 3px;
+    margin-bottom: 10px;
+    background-color: blue;
+    color: white;
+    border-radius: 3px;
+
+}
+.delete-btn:hover{
+    padding: 3px;
+    margin-bottom: 10px;
+    background-color: red;
+    color: white;
+    border-radius: 3px;
+
+}
+
+.completed {
+    text-decoration: line-through;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 0, 0);
+    background-color: var(--prim);
+
+}
+
+#task-counters {
+    margin: 10px;
+}
+
+#counter-container {
+    background-color: var(--sec);
+    border-radius: 15px;
+}
